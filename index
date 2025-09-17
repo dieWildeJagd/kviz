@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvanični kviz sajma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="quiz-container">
+            <h1>Zvanični kviz sajma</h1>
+            <p>Tourism Expo Sarajevo 2025.</p>
+            <p>Odgovorite na jedno pitanje i provjerite svoje znanje. Samo jedno pitanje po pokušaju.</p>
+            <button id="start-btn">Počni</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
