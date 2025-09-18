@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="overlay">
-        <div class="quiz-container">
+        <div class="quiz-container fade-in">
             <h1>Zvanični kviz sajma</h1>
             <p>Tourism Expo Sarajevo 2025.</p>
             <p>Odgovorite na jedno pitanje i provjerite svoje znanje. Samo jedno pitanje po pokušaju.</p>
-            <button id="start-btn">Počni</button>
+            <button id="start-btn" class="btn-main">Počni</button>
         </div>
     </div>
 
