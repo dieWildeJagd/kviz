@@ -1,138 +1,142 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body, html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    
-}
+  body, html {
+      height: 100%;
+      width: 100%;
+      font-family: 'Arial', sans-serif;
+      
+  }
 
-/* Background */
+  /* Background */
 .overlay {
     background: url('pozadina.png') no-repeat center center/cover;
-    height: 100%;   /* full height */
-    width: 100%;    /* full width */
+    background-size: cover; /* ključ za full screen */
+    height: 100%;
+    width: 100%;
+    background-position: center 90%;  /* ← Ovdje kontrolišeš vertikalno pomjeranje slike */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-/* Container */
-.quiz-container {
-    background: rgba(255, 255, 255, 0.85);
-    border: 2px solid rgba(255, 255, 255, 0.9);
-    padding: 30px 50px;
-    text-align: center;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    animation: fadeIn 0.6s ease forwards;
-}
+  /* Container */
+  .quiz-container {
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      padding: 30px 50px;
+      text-align: center;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 0.6s ease forwards;
+  }
 
-.quiz-container h1, .quiz-container h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
+  .quiz-container h1, .quiz-container h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+  }
 
-.quiz-container p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
+  .quiz-container p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+  }
 
-/* Buttons */
+  /* Buttons */
 
-#start-btn, #restart-btn {
-  padding: 12px 24px;
-  margin: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #007BFF;
-  color: white;
-}
-
-#start-btn:hover, #restart-btn:hover {
-  background-color: #0056b3;
-}
-.btn-main {
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    border: none;
+  #start-btn, #restart-btn {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
     border-radius: 8px;
-    background-color: #2e86de;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #007BFF;
     color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
+  }
 
-.btn-main:hover {
-    background-color: #1b4f72;
-}
+  #start-btn:hover, #restart-btn:hover {
+    background-color: #0056b3;
+  }
+  .btn-main {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #2e86de;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+  }
 
-/* Answers */
-.answers {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
+  .btn-main:hover {
+      background-color: #1b4f72;
+  }
 
-.answer-btn {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    transition: 0.3s;
-}
+  /* Answers */
+  .answers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+  }
 
-.answer-btn:hover {
-    background-color: #d5d5d5;
-}
+  .answer-btn {
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      transition: 0.3s;
+  }
 
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+  .answer-btn:hover {
+      background-color: #d5d5d5;
+  }
+
+  /* Animation */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  /* Tableti i uređaji do 768px širine */
+  @media (max-width: 768px) {
+    .quiz-container {
+      width: 80%; /* box ne ide skroz do ruba */
+      padding: 20px;
+      font-size: 0.95rem;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    /* komentar: resize glavnog boxa na tabletima */
+  }
+
+  /* Mobiteli do 480px širine */
+  @media (max-width: 480px) {
+    .quiz-container {
+      width: 90%; /* skoro cijela širina */
+      padding: 15px;
+      font-size: 0.9rem;
+          /* pomjeramo pozadinu na mobitelu */
+    background-position: center 50%; /* promijeni postotak po potrebi */
     }
-}
 
-/* Tableti i uređaji do 768px širine */
-@media (max-width: 768px) {
-  .quiz-container {
-    width: 80%; /* box ne ide skroz do ruba */
-    padding: 20px;
-    font-size: 0.95rem;
+    #start-btn, #restart-btn, .btn-main {
+      padding: 10px 18px;
+      font-size: 1rem;
+    }
+    /* komentar: resize boxa i dugmadi za male ekrane */
   }
-  /* komentar: resize glavnog boxa na tabletima */
-}
-
-/* Mobiteli do 480px širine */
-@media (max-width: 480px) {
-  .quiz-container {
-    width: 90%; /* skoro cijela širina */
-    padding: 15px;
-    font-size: 0.9rem;
-  }
-
-  #start-btn, #restart-btn, .btn-main {
-    padding: 10px 18px;
-    font-size: 1rem;
-  }
-  /* komentar: resize boxa i dugmadi za male ekrane */
-}
