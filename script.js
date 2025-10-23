@@ -1,121 +1,6 @@
 // pitanja i odgovori )
 const questions = [
     {
-        question: "Koje godine se po prvi put spominje ime Jajce?",
-        answers: ["1189", "1396", "1416"],
-        correct: 1
-    },
-    {
-        question: "Koja rijeka pravi vodopad u centru Jajca?",
-        answers: ["Pliva", "Vrbas", "Sava"],
-        correct: 0
-    },
-    {
-        question: "Ime kojeg velikana se vezuje uz osnivanje grada Jajca?",
-        answers: ["Kulin Ban", "Tvrtko I.", "Hrvoje Vukčić Hrvatinić"],
-        correct: 2
-    },
-    {
-        question: "Kako se zove najstariji spomenik u Jajcu?",
-        answers: ["Arena", "Dioklecijanova palača", "Hram boga Mitrasa"],
-        correct: 2
-    },
-    {
-        question: "Koliko je visok najviši vrh općine Jajce, Suhi vrh?",
-        answers: ["1219m", "1438m", "1528m"],
-        correct: 1
-    },
-    {
-        question: "Koje dvije rijeke se spajaju u Jajcu?",
-        answers: ["Sava i Dunav", "Pliva i Vrbas", "Una i Sava"],
-        correct: 1
-    },
-    {
-        question: "Koje godine je održano u Jajcu II. zasjedanje AVNOJ-a?",
-        answers: ["1943", "1944", "1945"],
-        correct: 0
-    },
-    {
-        question: "Koja mitska životinja se nalazi na grbu Hrvoja Vukčića Hrvatinića?",
-        answers: ["Grifon", "Zmaj", "Hipogrif"],
-        correct: 1
-    },
-    {
-        question: "Koliko je na području općine Jajce sačuvano srednjovjekovnih tvrđava?",
-        answers: ["1", "2", "3"],
-        correct: 2
-    },
-    {
-        question: "Koje godine je pogubljen posljednji bosanski kralj Stjepan Tomašević?",
-        answers: ["1428", "1463", "1481"],
-        correct: 1
-    },
-    {
-        question: "Kako se zove gradska džamija u Jajcu?",
-        answers: ["Esme sultanije", "Sulejmana veličanstvenog", "Murata I."],
-        correct: 0
-    },
-    {
-        question: "Koja manifestacija se svako ljeto održava na Plivskom vodopadu?",
-        answers: ["Skokovi", "Čučnjevi", "Sklekovi"],
-        correct: 0
-    },
-    {
-        question: "Koja su najveća sportska takmičenja organizirana na Plivskim jezerima?",
-        answers: ["Svjetska prvenstva u veslanju i fly fishingu", "Europska prvenstva u boksu i skoku u vis", "Balkanska prvenstva u pikadu i šahu"],
-        correct: 0
-    },
-    {
-        question: "Jajce je poznato kao grad",
-        answers: ["Trgovaca", "Kraljeva", "Ronilaca"],
-        correct: 1
-    },
-    {
-        question: "Kako se zove toranj podignut uz crkvu Sv. Marije?",
-        answers: ["Toranj Sv. Luke", "Toranj mira", "Toranj u Pisi"],
-        correct: 0
-    },
-    {
-        question: "Kako se zove endemska biljka koja raste uz tvrđavu Jajce?",
-        answers: ["Divlja ruža", "Bosanska zvončika", "Borovnica"],
-        correct: 1
-    },
-    {
-        question: "Koji su vodeni objekti poznati po svom prirodnom izgledu u blizini Jajca?",
-        answers: ["Veliki bazen", "Umjetni otoci", "Vodenice"],
-        correct: 2
-    },
-    {
-        question: "Kako se zove jezero koje se nalazi u blizini Jajca?",
-        answers: ["Jablaničko jezero", "Plivsko jezero", "Modračko jezero"],
-        correct: 1
-    },
-    {
-        question: "Što se nalazi na grbu grada Jajca?",
-        answers: ["Most i rijeka", "Tvrđava i vodopad", "Vuk i kula"],
-        correct: 1
-    },
-    {
-        question: "Koja od ovih građevina nije dio povijesne jezgre grada Jajca?",
-        answers: ["Katakombe", "Sahat-kula", "Zgrada Općine Jajce"],
-        correct: 2
-    },
-    {
-        question: "Koja od ovih kapija je bila glavni ulaz u grad u srednjem vijeku?",
-        answers: ["Banjalučka kapija", "Kraljevska kapija", "Sarajevska kapija"],
-        correct: 0
-    },
-    {
-        question: "Koji je naziv za gradsku kulu u Jajcu?",
-        answers: ["Orlova kula", "Medvjed kula", "Vučja kula"],
-        correct: 1
-    },
-    {
-        question: "Koji je poznati arheolog proveo mnogo godina istražujući Jajce?",
-        answers: ["Ivo Andrić", "Miroslav Krleža", "Ćiro Truhelka"],
-        correct: 2
-    },
-    {
         question: "Travnički ćevapi se konzumiraju sa:",
         answers: ["piticom i jogurtom", "Hljebom i kečapom", "Bez ičega, samo viljuškom"],
         correct: 0
@@ -193,6 +78,71 @@ const questions = [
     {
         question: "Da li se u Travniku nalazi rodna kuća Ive Andrića?",
         answers: ["Da", "Ne"],
+        correct: 0
+    },
+        {
+        question: "Koja je životinja povezana s Travnikom, a bila je poznata još u osmanskom periodu?",
+        answers: ["Slon", "Kornjača", "Tigar"],
+        correct: 0
+    },
+    {
+        question: "Plava voda se ulijeva u koju rijeku?",
+        answers: ["Savu", "Neretvu", "Lašvu"],
+        correct: 2
+    },
+    {
+        question: "Koja je najpoznatija džamija u Travniku?",
+        answers: ["Careva džamija", "Sulejmanija / Šarena džamija", "Džamija kralja Abdullaha"],
+        correct: 1
+    },
+    {
+        question: "Koliko ima unikatnih satova (sahat-kula) u Travniku?",
+        answers: ["5", "7", "12"],
+        correct: 1
+    },
+    {
+        question: "Kako se zovu navijači Nogometnog kluba Travnik?",
+        answers: ["Manijaci", "Gerile", "Crveni đavoli"],
+        correct: 1
+    },
+    {
+        question: "Koji poznati pjevač je rođen u Travniku?",
+        answers: ["Dino Merlin", "Al' Dino", "Seid Memić Vajta"],
+        correct: 2
+    },
+    {
+        question: "Glavna pješačka zona u Travniku se zove:",
+        answers: ["Travnički korzo", "Ulica travničkih vezira", "Ferhadija"],
+        correct: 0
+    },
+    {
+        question: "Poznati slapovi u Biljanskoj dolini su:",
+        answers: ["Slapovi Zvončice", "Slapovi Kozice", "Slapovi Sunce"],
+        correct: 1
+    },
+    {
+        question: "Poznati pas u travničkom kraju je:",
+        answers: ["Tornjak", "Kangal", "Šar-planinac"],
+        correct: 0
+    },
+    {
+        question: "Javna ustanova Zavičajni muzej Travnik je osnovan:",
+        answers: ["1935.", "1950.", "1961."],
+        correct: 1
+    },
+    {
+        question: "Isusovačka gimnazija u Travniku je osnovana:",
+        answers: ["1882.", "1905.", "1911."],
+        correct: 0
+    },
+    {
+        question: "Koje je poznato nalazište iz neolita na području Općine Travnik?",
+        answers: ["Zvijezde", "Mjesec", "Nebo"],
+        correct: 2
+    },
+    {
+        question: "Koje godine je zabilježen prvi pismeni trag o selu Guča Gora?",
+        answers: ["1425.", "1500.", "1427."],
         correct: 0
     }
 ];
