@@ -152,14 +152,32 @@ const questions = [
 const startBtn = document.getElementById("start-btn");
 const overlay = document.querySelector(".overlay");
 
+// Globalne varijable
+let quizQuestions = []; // tu ćemo smjestiti 5 RNG pitanja
+let currentQuestionIndex = 0;
+let score = 0;
+
 // Start
 startBtn.addEventListener("click", () => {
     startQuiz();
 });
 
 function startQuiz() {
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    const q = questions[randomIndex];
+    // uzmi 5 nasumičnih pitanja
+    quizQuestions = getRandomQuestions(5);
+    currentQuestionIndex = 0;
+    score = 0;
+    showQuestion();
+}
+
+function getRandomQuestions(num) {
+    // kopija niza i shuffle
+    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+}
+
+function showQuestion() {
+    const q = quizQuestions[currentQuestionIndex];
 
     overlay.innerHTML = `
         <div class="quiz-container fade-in">
@@ -175,15 +193,30 @@ function startQuiz() {
     document.querySelectorAll(".answer-btn").forEach(btn => {
         btn.addEventListener("click", (e) => {
             const chosen = parseInt(e.target.dataset.index);
-            showResult(chosen === q.correct);
+            handleAnswer(chosen === q.correct);
         });
     });
 }
 
-function showResult(isCorrect) {
+function handleAnswer(isCorrect) {
+    if (isCorrect) score++;
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < quizQuestions.length) {
+        // idemo na sljedeće pitanje
+        showQuestion();
+    } else {
+        // kraj kviza
+        showFinalResult();
+    }
+}
+
+function showFinalResult() {
     overlay.innerHTML = `
         <div class="quiz-container fade-in">
-            <h2>${isCorrect ? "Čestitamo, tačan odgovor! 🎉" : "Žao nam je, netačno 😔"}</h2>
+            <h2>Kviz završen!</h2>
+            <p>Tačnih odgovora: ${score} / ${quizQuestions.length}</p>
             <button id="restart-btn" class="btn-main">Nazad na početnu</button>
         </div>
     `;
