@@ -1,227 +1,199 @@
-// pitanja i odgovori )
-const questions = [
-    {
-        question: "Travnički ćevapi se konzumiraju sa:",
-        answers: ["piticom i jogurtom", "Hljebom i kečapom", "Bez ičega, samo viljuškom"],
-        correct: 0
-    },
-    {
-        question: "Koji poznati bosanskohercegovački pisac je rođen u Travniku i napisao Travničku hroniku?",
-        answers: ["Meša Selimović", "Ivo Andrić", "Branko Ćopić"],
-        correct: 1
-    },
-    {
-        question: "Kako se zove tvrđava iznad Travnika?",
-        answers: ["Stari grad Travnik", "Vezirska kula", "Srebrena tvrđava"],
-        correct: 0
-    },
-    {
-        question: "Travnik je u Osmanskom periodu bio sjedište koliko vezira?",
-        answers: ["7", "19", "77"],
-        correct: 2
-    },
-    {
-        question: "Koja rijeka protiče kroz Travnik?",
-        answers: ["Bosna", "Lašva", "Vrbas"],
-        correct: 1
-    },
-    {
-        question: "Koja je poznata delicija Travnika, zaštićena kao brend?",
-        answers: ["Travnički sir", "Travnička baklava", "Travnički ćevapi"],
-        correct: 0
-    },
-    {
-        question: "Kako se zove planina u blizini Travnika poznata po skijanju?",
-        answers: ["Vlašić", "Bjelašnica", "Igman"],
-        correct: 0
-    },
-    {
-        question: "Koje godine je Travnik postao glavno sjedište Bosanskog pašaluka?",
-        answers: ["1463", "1699", "1878"],
-        correct: 1
-    },
-    {
-        question: "Koja manifestacija se svake zime održava na Vlašiću?",
-        answers: ["Šankanje", "Vlašićke igre", "Festival planinara"],
-        correct: 0
-    },
-    {
-        question: "Da li je Travnik od 1699. do 1850. bio administrativno sjedište Bosanskog pašaluka?",
-        answers: ["Da", "Ne"],
-        correct: 0
-    },
-    {
-        question: "Da li je Vlašić planina poznata i po autohtonoj pasmini ovaca pramenki?",
-        answers: ["Da", "Ne"],
-        correct: 0
-    },
-    {
-        question: "Kako se zove poznata ruža bez trnja koja raste na Vlašiću?",
-        answers: ["Vlašićka ruža", "Rosa Brandis", "Planinska ruža"],
-        correct: 1
-    },
-    {
-        question: "Koja travnička crkva datira iz 19. stoljeća?",
-        answers: ["Katolička crkva sv. Ivana Krstitelja", "Pravoslavna crkva Uspenja Presvete Bogorodice", "Obje"],
-        correct: 2
-    },
-    {
-        question: "Koji poznati franjevački samostan se nalazi u Travniku?",
-        answers: ["Samostan sv. Ante", "Samostan sv. Ivana", "Franjevački samostan Guča Gora"],
-        correct: 2
-    },
-    {
-        question: "Koja osmanska građevina u Travniku danas služi kao obrazovna institucija?",
-        answers: ["Elči Ibrahim-pašina medresa", "Hadži Ali-begova džamija", "Stara tvrđava"],
-        correct: 0
-    },
-    {
-        question: "Da li se u Travniku nalazi rodna kuća Ive Andrića?",
-        answers: ["Da", "Ne"],
-        correct: 0
-    },
-        {
-        question: "Koja je životinja povezana s Travnikom, a bila je poznata još u osmanskom periodu?",
-        answers: ["Slon", "Kornjača", "Tigar"],
-        correct: 0
-    },
-    {
-        question: "Plava voda se ulijeva u koju rijeku?",
-        answers: ["Savu", "Neretvu", "Lašvu"],
-        correct: 2
-    },
-    {
-        question: "Koja je najpoznatija džamija u Travniku?",
-        answers: ["Careva džamija", "Sulejmanija / Šarena džamija", "Džamija kralja Abdullaha"],
-        correct: 1
-    },
-    {
-        question: "Koliko ima unikatnih satova (sahat-kula) u Travniku?",
-        answers: ["5", "7", "12"],
-        correct: 1
-    },
-    {
-        question: "Kako se zovu navijači Nogometnog kluba Travnik?",
-        answers: ["Manijaci", "Gerile", "Crveni đavoli"],
-        correct: 1
-    },
-    {
-        question: "Koji poznati pjevač je rođen u Travniku?",
-        answers: ["Dino Merlin", "Al' Dino", "Seid Memić Vajta"],
-        correct: 2
-    },
-    {
-        question: "Glavna pješačka zona u Travniku se zove:",
-        answers: ["Travnički korzo", "Ulica travničkih vezira", "Ferhadija"],
-        correct: 0
-    },
-    {
-        question: "Poznati slapovi u Biljanskoj dolini su:",
-        answers: ["Slapovi Zvončice", "Slapovi Kozice", "Slapovi Sunce"],
-        correct: 1
-    },
-    {
-        question: "Poznati pas u travničkom kraju je:",
-        answers: ["Tornjak", "Kangal", "Šar-planinac"],
-        correct: 0
-    },
-    {
-        question: "Javna ustanova Zavičajni muzej Travnik je osnovan:",
-        answers: ["1935.", "1950.", "1961."],
-        correct: 1
-    },
-    {
-        question: "Isusovačka gimnazija u Travniku je osnovana:",
-        answers: ["1882.", "1905.", "1911."],
-        correct: 0
-    },
-    {
-        question: "Koje je poznato nalazište iz neolita na području Općine Travnik?",
-        answers: ["Zvijezde", "Mjesec", "Nebo"],
-        correct: 2
-    },
-    {
-        question: "Koje godine je zabilježen prvi pismeni trag o selu Guča Gora?",
-        answers: ["1425.", "1500.", "1427."],
-        correct: 0
-    }
-];
-    // ... dodaj ostala pitanja
+// ============================================================
+// KVIZ – Travnik + Jajce (logika)
+// Pitanja su u questions.js (učitava se prije ove skripte)
+// ============================================================
 
-// DOM
-const startBtn = document.getElementById("start-btn");
+// ------------------------------------------------------------
+// POSTAVKE
+// ------------------------------------------------------------
+const QUESTIONS_PER_ROUND = 5;   // koliko pitanja u jednoj partiji
+const RECENT_MEMORY = 15;        // koliko posljednjih pitanja pamtimo (~3 partije)
+const RECENT_KEY = "kviz_nedavna_pitanja";
+const FEEDBACK_DELAY = 900;      // ms prikaza tačno/netačno prije sljedećeg pitanja
+
+// ------------------------------------------------------------
+// DOM + STANJE
+// ------------------------------------------------------------
 const overlay = document.querySelector(".overlay");
+const startScreenHTML = overlay.innerHTML; // početni ekran iz index.html, vraćamo ga bez reloada
 
-// Globalne varijable
-let quizQuestions = []; // tu ćemo smjestiti 5 RNG pitanja
+let quizQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let answered = false;
 
-// Start
-startBtn.addEventListener("click", () => {
-    startQuiz();
-});
+// ------------------------------------------------------------
+// POMOĆNE FUNKCIJE
+// ------------------------------------------------------------
+
+// Fisher–Yates shuffle: svaki raspored je jednako vjerovatan
+function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function escapeHTML(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Provjera podataka pri učitavanju: greške u pitanjima se vide u konzoli (F12)
+function validateQuestions(list) {
+    const seen = new Set();
+    list.forEach((q, i) => {
+        const label = `Pitanje #${i + 1} ("${String(q.question).slice(0, 40)}...")`;
+        if (!q.question || !Array.isArray(q.answers) || q.answers.length < 2) {
+            console.warn(`${label}: nedostaje tekst ili ima manje od 2 odgovora.`);
+        } else if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct >= q.answers.length) {
+            console.warn(`${label}: "correct" ne pokazuje na postojeći odgovor.`);
+        }
+        if (seen.has(q.question)) console.warn(`${label}: duplikat.`);
+        seen.add(q.question);
+    });
+    if (list.length <= QUESTIONS_PER_ROUND) {
+        console.warn("Premalo pitanja za odabranu veličinu partije.");
+    }
+}
+validateQuestions(questions);
+
+// ------------------------------------------------------------
+// IZBOR PITANJA
+// ------------------------------------------------------------
+
+// Pamćenje pitanja iz prethodnih partija (preživi osvježavanje stranice)
+function loadRecent() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(RECENT_KEY) || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function saveRecent(list) {
+    try {
+        localStorage.setItem(RECENT_KEY, JSON.stringify(list));
+    } catch (e) {
+        // storage nedostupan (privatni mod i sl.): kviz radi normalno, samo bez pamćenja
+    }
+}
+
+// Preferiraj pitanja koja nisu viđena u zadnjih par partija
+function getRandomQuestions(num) {
+    const recent = loadRecent();
+    let pool = questions.filter(q => !recent.includes(q.question));
+    if (pool.length < num) pool = [...questions];
+
+    const picked = shuffle(pool).slice(0, num);
+
+    const limit = Math.max(0, Math.min(RECENT_MEMORY, questions.length - num));
+    saveRecent([...picked.map(q => q.question), ...recent].slice(0, limit));
+
+    return picked;
+}
+
+// Miješa redoslijed odgovora, osim Da/Ne i pitanja s opcijom "Obje"
+function prepareQuestion(q) {
+    const items = q.answers.map((text, i) => ({ text, isCorrect: i === q.correct }));
+    const keepOrder = items.length <= 2 || q.answers.includes("Obje");
+    return { question: q.question, answers: keepOrder ? items : shuffle(items) };
+}
+
+// ------------------------------------------------------------
+// PRIKAZ
+// ------------------------------------------------------------
+
+function showStartScreen() {
+    overlay.innerHTML = startScreenHTML;
+}
+
+function showQuestion() {
+    const q = quizQuestions[currentQuestionIndex];
+    answered = false;
+
+    overlay.innerHTML = `
+        <div class="quiz-container">
+            <p class="progress">Pitanje ${currentQuestionIndex + 1} / ${quizQuestions.length}</p>
+            <h2>${escapeHTML(q.question)}</h2>
+            <div class="answers">
+                ${q.answers.map((ans, i) => `
+                    <button class="answer-btn" data-index="${i}">${escapeHTML(ans.text)}</button>
+                `).join("")}
+            </div>
+        </div>
+    `;
+}
+
+function resultMessage(points, total) {
+    const ratio = points / total;
+    if (ratio === 1) return "Savršeno! Pravi poznavalac Travnika i Jajca.";
+    if (ratio >= 0.6) return "Odlično znanje!";
+    return "Dobar pokušaj, probajte ponovo!";
+}
+
+function showFinalResult() {
+    overlay.innerHTML = `
+        <div class="quiz-container">
+            <h2>Kviz završen!</h2>
+            <p class="score">${score} / ${quizQuestions.length}</p>
+            <p>${resultMessage(score, quizQuestions.length)}</p>
+            <button id="restart-btn" class="btn-main">Nazad na početnu</button>
+        </div>
+    `;
+}
+
+// ------------------------------------------------------------
+// TOK KVIZA
+// ------------------------------------------------------------
 
 function startQuiz() {
-    // uzmi 5 nasumičnih pitanja
-    quizQuestions = getRandomQuestions(5);
+    quizQuestions = getRandomQuestions(QUESTIONS_PER_ROUND).map(prepareQuestion);
     currentQuestionIndex = 0;
     score = 0;
     showQuestion();
 }
 
-function getRandomQuestions(num) {
-    // kopija niza i shuffle
-    const shuffled = [...questions].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, num);
-}
+function handleAnswer(btn) {
+    if (answered) return; // spriječi dvostruki klik
+    answered = true;
 
-function showQuestion() {
     const q = quizQuestions[currentQuestionIndex];
+    const chosen = Number(btn.dataset.index);
+    const isCorrect = q.answers[chosen].isCorrect;
 
-    overlay.innerHTML = `
-        <div class="quiz-container fade-in">
-            <h2>${q.question}</h2>
-            <div class="answers">
-                ${q.answers.map((ans, i) => `
-                    <button class="answer-btn" data-index="${i}">${ans}</button>
-                `).join("")}
-            </div>
-        </div>
-    `;
+    // vizualna povratna informacija: označi izabrani, a ako je pogrešan i tačan odgovor
+    overlay.querySelector(".answers").classList.add("locked");
+    btn.classList.add(isCorrect ? "correct" : "wrong");
+    if (!isCorrect) {
+        const correctIndex = q.answers.findIndex(a => a.isCorrect);
+        overlay.querySelectorAll(".answer-btn")[correctIndex].classList.add("correct");
+    } else {
+        score++;
+    }
 
-    document.querySelectorAll(".answer-btn").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const chosen = parseInt(e.target.dataset.index);
-            handleAnswer(chosen === q.correct);
-        });
-    });
+    setTimeout(nextQuestion, FEEDBACK_DELAY);
 }
 
-function handleAnswer(isCorrect) {
-    if (isCorrect) score++;
-
+function nextQuestion() {
     currentQuestionIndex++;
-
     if (currentQuestionIndex < quizQuestions.length) {
-        // idemo na sljedeće pitanje
         showQuestion();
     } else {
-        // kraj kviza
         showFinalResult();
     }
 }
 
-function showFinalResult() {
-    overlay.innerHTML = `
-        <div class="quiz-container fade-in">
-            <h2>Kviz završen!</h2>
-            <p>Tačnih odgovora: ${score} / ${quizQuestions.length}</p>
-            <button id="restart-btn" class="btn-main">Nazad na početnu</button>
-        </div>
-    `;
+// Jedan listener na overlay (event delegation): radi i za dugmad koja se tek generišu
+overlay.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
 
-    document.getElementById("restart-btn").addEventListener("click", () => {
-        location.reload();
-    });
-}
+    if (btn.id === "start-btn") startQuiz();
+    else if (btn.id === "restart-btn") showStartScreen();
+    else if (btn.classList.contains("answer-btn")) handleAnswer(btn);
+});

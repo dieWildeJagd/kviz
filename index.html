@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kviz</title>
+    <title>Kviz – Travnik i Jajce</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="overlay">
-        <div class="quiz-container fade-in">
-            <h1>Koliko poznajete Travnik?</h1>
-            <p>Odgovorite na pitanja i provjerite svoje znanje o Travniku.</p>
+    <!-- aria-live: čitači ekrana najavljuju promjenu pitanja -->
+    <main class="overlay" aria-live="polite">
+        <div class="quiz-container">
+            <h1>Koliko poznajete Travnik i Jajce?</h1>
+            <p>Odgovorite na pitanja i provjerite svoje znanje o Travniku i Jajcu.</p>
             <button id="start-btn" class="btn-main">Start</button>
         </div>
-    </div>
+    </main>
 
-    <script src="script.js"></script>
+    <!-- defer: skripte se izvršavaju tek kad je HTML učitan; redoslijed je bitan -->
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
